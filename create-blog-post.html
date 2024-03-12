@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create blog post</title>
+    <link rel="icon" href="https://theweeklychallenge.org/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+
+     <!-- Google fonts -->
+     <link rel="stylesheet"
+     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- TinyMCE -->
+    <script src="https://cdn.tiny.cloud/1/ci57v5f5dkepj31a4ppjbj1b68jjkda0wnouosvx8frxxpb0/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarCenteredExample"
+                aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                <!-- Left links -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                        <img src="static/img/theweeklychallenge-logo.png" height="30" alt="theweeklychallenge logo"
+                            loading="lazy" />
+                    </a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="https://theweeklychallenge.org/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://theweeklychallenge.org/about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://theweeklychallenge.org/chart">Chart</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://theweeklychallenge.org/champions">Champions</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://theweeklychallenge.org/team">Team</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://theweeklychallenge.org/challenges">Challenges</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://theweeklychallenge.org/p5-reviews">Perl/Review</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://theweeklychallenge.org/p6-reviews">Raku/Review</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://theweeklychallenge.org/recaps">Recaps</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://theweeklychallenge.org/blogs"
+                            style="color: #02BDD5;">Blogs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://theweeklychallenge.org/faq">FAQ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://theweeklychallenge.org/contact">Contact</a>
+                    </li>
+
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+
+
+    <!-- Create blog post section start -->
+    <section class="mt-5">
+
+        <div class="container-md">
+            <div class="row justify-content-center">
+                <div class="col col-lg-10 col-xxl-9 ">
+                    <h5 class="text-black">Create blog post</h5>
+                    <hr>
+                    <p>
+                        <i style="font-size: 14px;">
+                            Required fields are marked with an asterisk (*).
+                        </i>
+                    </p>
+
+                    <div class="row mt-3 row-cols-1 row-cols-sm-2 row-cols-md-2" >
+
+                        <div class="col mb-3" >
+                            <label for="blog-title" class="form-label text-black">Title *</label>
+                            <input type="email" class="form-control p-2" id="blog-title"
+                                placeholder="Enter your thought title...">
+                        </div>
+                        <div class="col mb-3">
+                            <label for="tags-input" class="form-label text-black">Tags</label>
+                            <input type="email" class="form-control p-2" id="tags-input"
+                                placeholder="Tags...">
+                        </div>
+
+                    </div>
+
+                    <!-- section header start -->
+                    <div>
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <label for="section-header" class="form-label text-black">Section header *</label>
+                                <input type="email" class="form-control p-2" id="section-header"
+                                    placeholder="Enter header...">
+                            </div>
+                            <div class="mt-2">
+                                <textarea class="form-control" id="article" rows="4" name="article"
+                                    placeholder="Write your content here..." style="resize: none;">
+                                </textarea>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="mt-3 mb-2">
+                        <button type="button"
+                            class="btn btn-white shadow-3-strong btn-lg self-alignemt-center rounded-6 text-black bg-light p-3"
+                            data-mdb-collapse-init data-mdb-target="#collapseOneY" aria-expanded="true"
+                            aria-controls="collapseOneY" id="add-new-article-btn">
+                            <span class="" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi fw-bold" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                </svg>
+                            </span>
+                            S<span class="text-lowercase">ection</span>
+                        </button>
+                    </div>
+                    <!-- section header end -->
+                    <hr>
+
+                    <div class="mt-3 mb-3 footer text-end">
+                        <button type="button" class="btn btn-md btn-primary"
+                            data-mdb-ripple-init>
+                            S<span class="text-lowercase">ubmit post</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Create blog post section end-->
+
+
+
+    <script>
+        tinymce.init({
+            selector: 'textarea#article',
+            spellchecker_dialog: false, // Disable the spellchecker dialog
+            browser_spellcheck: false, // Disable the browser's built-in spellchecker
+            // width : 600,
+            height: 400,
+            plugins: [
+                'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
+                'searchreplace', 'wordcount', 'visualblocks', 'visualchars', 'code', 'fullscreen', 'insertdatetime',
+                'media', 'table', 'emoticons', 'template', 'help'
+            ],
+            toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright alignjustify | ' +
+                'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+                'forecolor backcolor emoticons | help',
+            menu: {
+                favs: { title: 'My Favorites', items: 'code visualaid | searchreplace | emoticons' }
+            },
+            menubar: 'favs file edit view insert format tools table help',
+            content_css: 'css/content.css'
+        });
+    </script>
+
+
+    <!-- pure bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- MDB bootstrap -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+
+</body>
+
+</html>
